@@ -508,6 +508,6 @@ export class PluginManagerExtImpl extends AbstractPluginManagerExtImpl<PluginMan
 }
 
 // for electron
-function getGlobal(): Window | NodeJS.Global | null {
+function getGlobal(): Window | NodeJS.Global | typeof globalThis | null {
     return typeof self === 'undefined' ? typeof global === 'undefined' ? null : global : self;
 }

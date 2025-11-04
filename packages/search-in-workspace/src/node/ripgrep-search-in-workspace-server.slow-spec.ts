@@ -272,7 +272,7 @@ function compareSearchResults(expected: SearchInWorkspaceExpectation[], actual: 
     }
 }
 
-describe('ripgrep-search-in-workspace-server', function (): void {
+describe('ripgrep-search-in-workspace-server', function (this: Mocha.Context): void {
     this.timeout(10000);
 
     it('should return 1 result when searching for " pasta", respecting the leading whitespace', done => {
@@ -459,7 +459,7 @@ describe('ripgrep-search-in-workspace-server', function (): void {
 
     // Try with an output size that exceeds the default node buffer size
     // (200 * 1024) when spawning a new process.
-    it('should work with a lot of results', done => {
+    it('should work with a lot of results', function (this: Mocha.Context, done): void {
         // This can take a bit of time.
         this.timeout(150000);
         const pattern = 'lots-of-matches';
@@ -955,7 +955,7 @@ describe('ripgrep-search-in-workspace-server', function (): void {
     });
 });
 
-describe('#extractSearchPathsFromIncludes', function (): void {
+describe('#extractSearchPathsFromIncludes', function (this: Mocha.Context): void {
     this.timeout(10000);
     it('should not resolve paths from a not absolute / relative pattern', async () => {
         const pattern = 'carrots';
@@ -988,7 +988,7 @@ describe('#extractSearchPathsFromIncludes', function (): void {
     });
 });
 
-describe('#addGlobArgs', function (): void {
+describe('#addGlobArgs', function (this: Mocha.Context): void {
     this.timeout(10000);
 
     it('should resolve path to glob - filename', function (): void {

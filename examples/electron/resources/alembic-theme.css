@@ -1,0 +1,174 @@
+/**
+ * DataPortal Data Engineering - Alembic Brand Theme
+ * Copyright © 2025 Alembic Technologies, Inc.
+ * 
+ * This theme applies Alembic's brand identity to the Theia IDE:
+ * - Primary Color: Alembic Purple (#6845B9)
+ * - Text Colors: Black (#000000) and Grey (#737373)
+ * - 10-Color Chart Palette
+ */
+
+:root {
+    /* Alembic Brand Colors */
+    --brand-primary: #6845B9;
+    --brand-primary-rgb: 104, 69, 185;
+    --brand-primary-dark: #563999;
+    --brand-primary-light: #7d5ccf;
+
+    /* Base Colors */
+    --alembic-black: #000000;
+    --alembic-grey: #737373;
+    --alembic-white: #FFFFFF;
+
+    /* Foreground Colors */
+    --foreground: var(--alembic-black);
+    --muted-foreground: var(--alembic-grey);
+
+    /* Chart Colors (10-color palette) */
+    --chart-1: #6845B9;
+    /* Purple */
+    --chart-2: #0073E6;
+    /* Blue */
+    --chart-3: #D76639;
+    /* Orange */
+    --chart-4: #E49C41;
+    /* Yellow */
+    --chart-5: #4AA473;
+    /* Green */
+    --chart-6: #D03935;
+    /* Red */
+    --chart-7: #CA4AF3;
+    /* Magenta */
+    --chart-8: #54B4D8;
+    /* Cyan */
+    --chart-9: #517FFD;
+    /* Light Blue */
+    --chart-10: #94CB1D;
+    /* Lime */
+
+    /* Theia IDE Color Overrides */
+    --theia-brand-color0: var(--brand-primary);
+    --theia-brand-color1: var(--brand-primary-dark);
+    --theia-brand-color2: var(--brand-primary-light);
+
+    /* UI Element Colors */
+    --theia-activityBar-background: #2c2c2c;
+    --theia-activityBar-foreground: var(--alembic-white);
+    --theia-activityBar-activeBorder: var(--brand-primary);
+    --theia-activityBarBadge-background: var(--brand-primary);
+    --theia-activityBarBadge-foreground: var(--alembic-white);
+
+    --theia-statusBar-background: var(--brand-primary);
+    --theia-statusBar-foreground: var(--alembic-white);
+    --theia-statusBar-noFolderBackground: var(--brand-primary-dark);
+
+    --theia-button-background: var(--brand-primary);
+    --theia-button-foreground: var(--alembic-white);
+    --theia-button-hoverBackground: var(--brand-primary-light);
+
+    --theia-focusBorder: var(--brand-primary);
+    --theia-list-activeSelectionBackground: rgba(var(--brand-primary-rgb), 0.2);
+    --theia-list-hoverBackground: rgba(var(--brand-primary-rgb), 0.1);
+
+    /* Menu and Toolbar */
+    --theia-menu-selectionBackground: rgba(var(--brand-primary-rgb), 0.15);
+    --theia-menu-selectionForeground: var(--foreground);
+    --theia-menubar-selectionBackground: rgba(var(--brand-primary-rgb), 0.15);
+
+    /* Tab Colors */
+    --theia-tab-activeBackground: var(--alembic-white);
+    --theia-tab-activeBorder: var(--brand-primary);
+    --theia-tab-activeBorderTop: var(--brand-primary);
+
+    /* Editor Colors */
+    --theia-editor-selectionBackground: rgba(var(--brand-primary-rgb), 0.25);
+    --theia-editor-selectionHighlightBackground: rgba(var(--brand-primary-rgb), 0.15);
+
+    /* Badge Colors */
+    --theia-badge-background: var(--brand-primary);
+    --theia-badge-foreground: var(--alembic-white);
+
+    /* Progress Bar */
+    --theia-progressBar-background: var(--brand-primary);
+}
+
+/* Dark theme overrides */
+body.theia-dark,
+.theia-dark {
+    --theia-activityBar-background: #1e1e1e;
+    --theia-statusBar-background: var(--brand-primary);
+}
+
+/* Custom branding for specific elements */
+.theia-ApplicationShell {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Status bar branding */
+#theia-statusBar {
+    background-color: var(--brand-primary) !important;
+    color: var(--alembic-white) !important;
+}
+
+/* Activity bar icons */
+.p-TabBar-tab.p-mod-current {
+    border-left-color: var(--brand-primary) !important;
+}
+
+/* Button styling */
+.theia-button,
+button.theia-button {
+    background-color: var(--brand-primary) !important;
+    color: var(--alembic-white) !important;
+    border: none;
+    border-radius: 2px;
+    padding: 6px 14px;
+    font-weight: 500;
+}
+
+.theia-button:hover,
+button.theia-button:hover {
+    background-color: var(--brand-primary-light) !important;
+}
+
+.theia-button:active,
+button.theia-button:active {
+    background-color: var(--brand-primary-dark) !important;
+}
+
+/* Link colors */
+a {
+    color: var(--brand-primary);
+}
+
+a:hover {
+    color: var(--brand-primary-light);
+}
+
+/* Selection highlight */
+::selection {
+    background-color: rgba(var(--brand-primary-rgb), 0.3);
+}
+
+/* Welcome page branding */
+.gs-container {
+    color: var(--foreground);
+}
+
+.gs-header h1 {
+    color: var(--brand-primary);
+}
+
+/* Terminal cursor */
+.xterm-cursor-layer .xterm-cursor {
+    background-color: var(--brand-primary);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(var(--brand-primary-rgb), 0.4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(var(--brand-primary-rgb), 0.6);
+}

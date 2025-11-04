@@ -21,5 +21,7 @@
  */
 
 describe('plugin-ext-headless package', () => {
-    it('placeholder to enable mocha', () => true);
+    it('placeholder to enable mocha', () => {
+        expect(true).toBe(true);
+    });
 });

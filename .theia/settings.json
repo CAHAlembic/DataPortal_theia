@@ -20,4 +20,25 @@
     "MD033": false, // allow inline html
     "MD041": false // don't require h1 in first line
   },
+  // Theia AI Beta Configuration
+  "ai-features.AiEnable.enableAI": true,
+  // Ollama Configuration for Local Models
+  "ai-features.ollama.ollamaHost": "http://localhost:11434",
+  "ai-features.ollama.ollamaModels": [
+    "llama3",
+    "qwen2.5-coder",
+    "llama3.2"
+  ],
+  // Language Model Aliases - Configure models for different tasks
+  "ai-features.languageModelAliases": {
+    "default/code": {
+      "selectedModel": "ollama/qwen2.5-coder"
+    },
+    "default/chat": {
+      "selectedModel": "ollama/llama3.2"
+    },
+    "default/universal": {
+      "selectedModel": "ollama/llama3.2"
+    }
+  }
 }

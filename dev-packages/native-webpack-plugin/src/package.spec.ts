@@ -22,7 +22,9 @@
    This file can be removed once we have real unit
    tests in place. */
 
-describe('request package', () => {
+describe('native-webpack-plugin package', () => {
 
-    it('should support code coverage statistics', () => true);
+    it('should support code coverage statistics', () => {
+        expect(true).toBe(true);
+    });
 });

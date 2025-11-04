@@ -1,7 +1,9 @@
 {
   "private": true,
-  "name": "@theia/monorepo",
+  "name": "@alembic/dataportal-monorepo",
   "version": "0.0.0",
+  "description": "DataPortal Data Engineering - Alembic's GPU-Native Data Analytics IDE",
+  "author": "Alembic Technologies, Inc.",
   "engines": {
     "node": ">=20"
   },
@@ -117,7 +119,8 @@
     "EditorConfig.EditorConfig": "https://open-vsx.org/api/EditorConfig/EditorConfig/0.16.6/file/EditorConfig.EditorConfig-0.16.6.vsix",
     "dbaeumer.vscode-eslint": "https://open-vsx.org/api/dbaeumer/vscode-eslint/2.4.2/file/dbaeumer.vscode-eslint-2.4.2.vsix",
     "ms-toolsai.jupyter": "https://open-vsx.org/api/ms-toolsai/jupyter/2025.7.0/file/ms-toolsai.jupyter-2025.7.0.vsix",
-    "ms-python.python": "https://open-vsx.org/api/ms-python/python/2025.4.0/file/ms-python.python-2025.4.0.vsix"
+    "ms-python.python": "https://open-vsx.org/api/ms-python/python/2025.4.0/file/ms-python.python-2025.4.0.vsix",
+    "dbcode.dbcode": "https://open-vsx.org/api/dbcode/dbcode/1.17.27/file/dbcode.dbcode-1.17.27.vsix"
   },
   "theiaPluginsExcludeIds": [
     "ms-vscode.js-debug-companion",

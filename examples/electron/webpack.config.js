@@ -1,10 +1,13 @@
 /**
- * This file can be edited to customize webpack configuration.
- * To reset delete this file and rerun theia build again.
+ * DataPortal Data Engineering - Webpack Configuration
+ * Copyright © 2025 Alembic Technologies, Inc.
+ * 
+ * This file has been customized for Alembic branding.
  */
 // @ts-check
 const configs = require('./gen-webpack.config.js');
 const nodeConfig = require('./gen-webpack.node.config.js');
+const path = require('path');
 
 /**
  * Expose bundled modules on window.theia.moduleName namespace, e.g.
@@ -16,6 +19,13 @@ configs[0].module.rules.push({
     loader: require.resolve('@theia/application-manager/lib/expose-loader')
 });
 
+/**
+ * Add custom CSS loader for Alembic theme
+ */
+configs[0].module.rules.push({
+    test: /alembic-theme\.css$/,
+    use: ['style-loader', 'css-loader']
+});
 
 module.exports = [
     ...configs,

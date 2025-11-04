@@ -15,5 +15,7 @@
 // *****************************************************************************
 
 describe('timeline package', () => {
-    it('supports code coverage statistics', () => true);
+    it('supports code coverage statistics', () => {
+        expect(true).toBe(true);
+    });
 });

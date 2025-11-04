@@ -33,7 +33,7 @@ const track = temp.track();
 const expect = chai.expect;
 const FORK_TEST_FILE = path.join(__dirname, '../../src/node/test/process-fork-test.js');
 
-describe('RawProcess', function (): void {
+describe('RawProcess', function (this: Mocha.Context): void {
 
     this.timeout(20_000);
 

@@ -24,5 +24,7 @@
 
 describe('console package', () => {
 
-    it('support code coverage statistics', () => true);
+    it('support code coverage statistics', () => {
+        expect(true).toBe(true);
+    });
 });

@@ -24,5 +24,7 @@
 
 describe('outline view package', () => {
 
-    it('should support code coverage statistics', () => true);
+    it('should support code coverage statistics', () => {
+        expect(true).toBe(true);
+    });
 });
