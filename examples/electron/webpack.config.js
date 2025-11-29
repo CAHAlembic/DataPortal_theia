@@ -19,13 +19,6 @@ configs[0].module.rules.push({
     loader: require.resolve('@theia/application-manager/lib/expose-loader')
 });
 
-/**
- * Add custom CSS loader for Alembic theme
- */
-configs[0].module.rules.push({
-    test: /alembic-theme\.css$/,
-    use: ['style-loader', 'css-loader']
-});
 
 module.exports = [
     ...configs,

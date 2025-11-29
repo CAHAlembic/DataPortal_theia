@@ -1,0 +1,31 @@
+{
+  "name": "@alembic/branding",
+  "version": "0.0.0",
+  "description": "Alembic Branding Extension",
+  "keywords": [
+    "theia-extension"
+  ],
+  "license": "UNLICENSED",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "dependencies": {
+    "@theia/core": "1.65.0",
+    "inversify": "^6.0.1"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.0",
+    "typescript": "~5.4.5"
+  },
+  "scripts": {
+    "build": "tsc && mkdir -p lib/browser/style && cp src/browser/style/alembic-theme.css lib/browser/style/",
+    "clean": "rimraf lib",
+    "watch": "tsc -w"
+  },
+  "theiaExtensions": [
+    {
+      "frontend": "lib/browser/branding-frontend-module"
+    }
+  ]
+}
