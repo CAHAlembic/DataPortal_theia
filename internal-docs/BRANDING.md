@@ -194,10 +194,10 @@ Before releasing a branded build, verify:
 - [✅] Window title bar shows correct product name
 - [✅] About dialog shows Alembic company name
 - [✅] Status bar uses Alembic Purple (#6845B9)
-- [ ] Buttons use Alembic Purple background
+- [✅] Buttons use Alembic Purple background
 - [✅] Application icon displays correctly in OS (dock/taskbar)
 - [✅] Splash screen shows during launch
-- [ ] No "Theia" or "Eclipse" text visible in UI
+- [✅] No "Theia" or "Eclipse" text visible in UI
 - [✅] Theme colors match brand palette
 - [✅] All UI elements remain readable and accessible
 

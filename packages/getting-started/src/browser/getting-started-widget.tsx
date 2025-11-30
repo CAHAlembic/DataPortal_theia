@@ -458,7 +458,7 @@ export class GettingStartedWidget extends ReactWidget {
                         </a>.
                         <br />
                         <br />
-                        🚧 Please note that this feature is currently in a beta state and may undergo changes.
+                        {/* 🚧 Please note that this feature is currently in a beta state and may undergo changes.
                         We welcome your feedback, contributions, and sponsorship! To support the ongoing development of the AI capabilities please visit the&nbsp;
                         <a
                             role={'button'}
@@ -476,7 +476,7 @@ export class GettingStartedWidget extends ReactWidget {
                             onClick={() => this.doOpenExternalLink(this.theiaAIDocUrl)}
                             onKeyDown={(e: React.KeyboardEvent) => this.doOpenExternalLinkEnter(e, this.theiaAIDocUrl)}>
                             {'the Theia AI documentation'}
-                        </a>!
+                        </a>! */}
                     </div>
                     <br />
                     <div className='gs-action-container'>
