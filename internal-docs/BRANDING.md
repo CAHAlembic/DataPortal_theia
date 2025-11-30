@@ -190,16 +190,16 @@ Set in multiple locations:
 
 Before releasing a branded build, verify:
 
-- [ ] Application title shows "DataPortal Data Engineering"
-- [ ] Window title bar shows correct product name
-- [ ] About dialog shows Alembic company name
-- [ ] Status bar uses Alembic Purple (#6845B9)
+- [✅] Application title shows "DataPortal Data Engineering"
+- [✅] Window title bar shows correct product name
+- [✅] About dialog shows Alembic company name
+- [✅] Status bar uses Alembic Purple (#6845B9)
 - [ ] Buttons use Alembic Purple background
-- [ ] Application icon displays correctly in OS (dock/taskbar)
-- [ ] Splash screen shows during launch
+- [✅] Application icon displays correctly in OS (dock/taskbar)
+- [✅] Splash screen shows during launch
 - [ ] No "Theia" or "Eclipse" text visible in UI
-- [ ] Theme colors match brand palette
-- [ ] All UI elements remain readable and accessible
+- [✅] Theme colors match brand palette
+- [✅] All UI elements remain readable and accessible
 
 ## Future Enhancements
 
