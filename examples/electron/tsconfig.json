@@ -2,9 +2,10 @@
   "extends": "../../configs/base.tsconfig",
   "compilerOptions": {
     "composite": true,
-    "outDir": "lib/test"
+    "outDir": "lib"
   },
   "include": [
+    "src",
     "test"
   ],
   "references": [
