@@ -1,0 +1,104 @@
+/* Rete container - the main editor area */
+.rete-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  background: #1e1e1e;
+  overflow: hidden;
+}
+
+.rete-node {
+  background: #333;
+  border: 2px solid #555;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  height: auto;
+  padding-bottom: 6px;
+  box-sizing: border-box;
+  min-width: 180px;
+  position: absolute;
+  user-select: none;
+  z-index: 10;
+}
+
+.rete-node:hover {
+  background: #444;
+  border-color: #777;
+}
+
+.rete-node.selected {
+  border-color: #ffcc00;
+  background: #555;
+}
+
+.rete-node .title {
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.rete-node .output {
+  text-align: right;
+}
+
+.rete-node .input {
+  text-align: left;
+}
+
+.rete-node .input-title,
+.rete-node .output-title {
+  vertical-align: middle;
+  color: white;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 14px;
+  margin: 5px;
+  line-height: 24px;
+}
+
+.rete-node .input-socket,
+.rete-node .output-socket {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+  width: 24px;
+  height: 24px;
+  background: #999;
+  border: 2px solid white;
+  border-radius: 12px;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.rete-node .input-socket:hover,
+.rete-node .output-socket:hover {
+  background: #bbb;
+  border-color: #ffcc00;
+}
+
+.rete-connection {
+  overflow: visible;
+  position: absolute;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.rete-connection path {
+  fill: none;
+  stroke: #aaa;
+  stroke-width: 2px;
+  pointer-events: auto;
+}
+
+.rete-connection path.main-path {
+  stroke: steelblue;
+  stroke-width: 5px;
+}
+
+.rete-connection:hover path {
+  stroke: #4a9eff;
+}

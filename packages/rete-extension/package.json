@@ -1,0 +1,39 @@
+{
+    "name": "rete-extension",
+    "keywords": [
+        "theia-extension"
+    ],
+    "version": "0.0.0",
+    "files": [
+        "lib",
+        "src"
+    ],
+    "dependencies": {
+        "@theia/core": "latest",
+        "@theia/filesystem": "latest",
+        "@theia/messages": "latest",
+        "@theia/editor": "latest",
+        "rete": "^2.0.0",
+        "rete-area-plugin": "^2.0.0",
+        "rete-connection-plugin": "^2.0.0",
+        "rete-react-plugin": "^2.0.0"
+    },
+    "devDependencies": {
+        "rimraf": "^5.0.0",
+        "typescript": "~5.4.5",
+        "react": "18.3.1",
+        "react-dom": "18.3.1"
+    },
+    "scripts": {
+        "prepare": "npm run clean && npm run build",
+        "clean": "rimraf lib",
+        "build": "tsc && npm run copy:css",
+        "copy:css": "cp src/rete.css lib/rete.css",
+        "watch": "tsc -w"
+    },
+    "theiaExtensions": [
+        {
+            "frontend": "lib/rete-extension-frontend-module"
+        }
+    ]
+}
